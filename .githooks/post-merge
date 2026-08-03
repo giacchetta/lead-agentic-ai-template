@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+if [ -f "./.agents/sync.sh" ]; then
+  echo "📥 Running post-merge central prompt sync..."
+  ./.agents/sync.sh
+fi

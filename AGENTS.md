@@ -7,6 +7,7 @@ Before reading user requests or modifying ANY file, you MUST follow this exact e
 3. **STEP 3 — READ LOCAL ARCHITECTURE**: Read Section 2 below (`# Local Architecture Blueprint`). DO NOT execute recursive directory exploration scripts or spawn sub-agents to explore the codebase.
 4. **STEP 4 — EXECUTE TASK**: Perform the task adhering strictly to the above.
 5. **STEP 5 — ARCHITECTURE PROTOCOL**: Read `.agents/protocols/agents-md-protocol.md`. If your changes modified system boundaries, directory structures, or APIs, you MUST update Section 2 of this `AGENTS.md` file before completing your task.
+6. **STEP 6 — PR PROTOCOL**: If the task involves creating, updating, or commenting on a pull request, you MUST read `.agents/protocols/pr-scope-protocol.md` before taking any PR action (editing a PR body, posting a PR comment, changing draft/ready state).
 
 ---
 

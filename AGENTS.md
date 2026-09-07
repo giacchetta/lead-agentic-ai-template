@@ -8,6 +8,7 @@ Before reading user requests or modifying ANY file, you MUST follow this exact e
 4. **STEP 4 — EXECUTE TASK**: Perform the task adhering strictly to the above.
 5. **STEP 5 — ARCHITECTURE PROTOCOL**: Read `.agents/protocols/agents-md-protocol.md`. If your changes modified system boundaries, directory structures, or APIs, you MUST update Section 2 of this `AGENTS.md` file before completing your task.
 6. **STEP 6 — PR PROTOCOL**: If the task involves creating, updating, or commenting on a pull request, you MUST read `.agents/protocols/pr-scope-protocol.md` before taking any PR action (editing a PR body, posting a PR comment, changing draft/ready state).
+7. **STEP 7 — ISSUE DEPENDENCY PROTOCOL**: If the task involves creating issues with an execution order, or moving/reordering issues across milestones, you MUST read `.agents/protocols/issue-dependencies-protocol.md` before creating, editing, or moving any issue, and encode the order as native GitHub issue dependencies (`blocked_by`/`blocking`), not only as prose.
 
 ---
 

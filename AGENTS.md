@@ -1,5 +1,11 @@
 # 🛑 SYSTEM DIRECTIVE & EXECUTION SEQUENCE (MANDATORY)
 
+## 🚫 HUMAN-ONLY: COMMIT & PUSH (MANDATORY, NO EXCEPTIONS)
+
+No agent — Claude Code or any other — may ever run `git commit` (in any form, including `--amend`) or `git push` (in any form, including `--force`/`--force-with-lease`) in this repository. That is a human action only. Stage changes, show diffs, run checks, open a PR body/comment draft for the human to review — then **stop** and let the human commit and push themselves. This holds even if a user explicitly asks the agent to commit or push in the moment; the answer is to hand back a ready-to-commit working tree, not to run the command.
+
+This is enforced technically, not just documented: `.claude/settings.json`'s `permissions.deny` blocks `Bash(git commit *)` and `Bash(git push *)` outright. This paragraph is the documented half of that same rule — if you ever find yourself about to run either command, that is a signal to stop and hand off to the human, not to look for a workaround.
+
 Before reading user requests or modifying ANY file, you MUST follow this exact execution sequence:
 
 1. **STEP 1 — GUARDRAILS CHECK**: Read `.agents/guardrails/*.md`. Any violation results in immediate execution termination.
